@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77ea2b894e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/piyushlogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark hid" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars hid" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Piyush</span><br>Singh<br></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----About------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/finalpic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Piyush Singh, a passionate and driven web developer with highly skilled in data structures and algorithms. I believe in the power of technology to create innovative solutions and enhance our daily lives.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Data Structures and Algorithms</span><br>Problem Solving(Data Structures)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2023 - August 2023</span><br>CSIR - National Institute of Oceanography(NIO)<br>Research Intern</li>
+                            <li><span>Nov 2021 - Jan 2022</span><br>Servon Solution LLP<br>SME Intern</li>
+                            <li><span>Nov 2021 - March 2022</span><br>Solvitude Solution<br>SME Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>National Institute of Technology(NIT) Goa<br>B.Tech in Electrical and Electronics Engineering(EEE) - 8.63</li>
+                            <li><span>2018 - 2020</span><br>Shivprakash Memorial School<br>Class XII - 89.8%</li>
+                            <li><span>2016</span><br>Shivprakash Memorial School<br>Class X - 70.8%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----services----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>
+                        <ul>
+                            <li>Front-end Development
+                                <ul>HTML, CSS, JS, ReactJS, EJS</ul>
+                            </li>
+                            <li>Back-end Development with databases
+                                <ul>NodeJS, ExpressJS, MongoDB, SQL</ul>
+                            </li>
+                        </ul>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        <ul>
+                            <li>Responsive Design</li>
+                            <li>UI Component Libraries</li>
+                            <li>User-Centered Design</li>
+                        </ul>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Data Structures and Algorithms</h2>
+                    <p>
+                        <ul>
+                            <li>Leetcode</li>
+                            <li>GeeksforGeeks</li>
+                        </ul>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----PORTFOLIO--->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/workf1.png">
+                    <div class="layer">
+                        <h3>Keeper App</h3>
+                        <p>Keeper App is a basic notes keeping app similar to google keeps. This app gives you a fast and simple notepad creating experience where you can write notes, memos, emails, messages, lectures and more in no time.</p>
+                        <a href="https://keeper-app-psh.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/workf2.png">
+                    <div class="layer">
+                        <h3>Simon's Game</h3>
+                        <p>Built a game which says players must obey all commands that begin with the words which “Simon says”. Game creates a series of tones and lights and requires a user to repeat the sequence in each upcoming level.</p>
+                        <a href="https://psingh202.github.io/Simon-s-Game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/workf3.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>A Personal Portfolio is a collection that showcases an individual's work, skills, and accomplishments.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>singh2002piyush@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-9714831226</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/piyush_a16?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/piyush-singh-557b5b242/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1FdHecgN0GOIeke0QuXGYB03nJujC-5c2/view?usp=drive_link" download class="btn btn2">Download Resume <i class="fa-solid fa-download"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Made by Piyush Singh</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
